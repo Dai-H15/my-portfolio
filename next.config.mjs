@@ -1,4 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {basePath: "/my-portfolio", output: "export",};
+const nextConfig = { output: "export",};
 
 export default nextConfig;
