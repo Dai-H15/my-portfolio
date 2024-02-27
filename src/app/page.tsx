@@ -1,5 +1,8 @@
 import Image from "next/image";
 
 export default function Home() {
-  return (<p>This is main Page</p>);
+  return (<div className="Home">
+      <h2>ポートフォリオです。</h2>
+      <p>左のメニューをクリックするとそれぞれのページに書き換わります</p>
+  </div>);
 }

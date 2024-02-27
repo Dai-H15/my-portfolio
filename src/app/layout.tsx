@@ -20,9 +20,9 @@ export default function RootLayout({
     <html lang="ja">
       <body className={inter.className}>
         <div className="container-fluid">
-          <div className="row"><Header/></div>
+          <div className="row border"><Header/></div>
           <div className="row">
-            <div className="col-2"><MenuBar/></div>
+            <div className="col-2 border-end" style={{ height: '90vh', borderTop: 'none' }}><MenuBar/></div>
             <div className="col-10 p-3">{children}</div>
           </div>
         </div>

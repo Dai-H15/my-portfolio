@@ -1,5 +1,9 @@
+import Image from "next/image"
+
 export default function Profile() {
     return(
-        <div className="">this is profile page</div>
+        <div className="main">
+            <Image src = {"my-portfolio/1.jpg"} width={30} height={20} alt="プロフィール画像"/>
+        </div>
     )
 }
