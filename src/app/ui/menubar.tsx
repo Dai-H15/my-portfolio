@@ -6,6 +6,7 @@ function MenuBar(){
         "skills":"スキル",
         "github": "GitHub",
         "qiita": "Qiita",
+        "wantedly": "Wantedly",
     };
     const URLs: { [key: string]: string } = {
         "top":"/",
@@ -13,6 +14,7 @@ function MenuBar(){
         "skills":"/skils",
         "github": "https://github.com/Dai-H15",
         "qiita": "https://qiita.com/Dai-H15",
+        "wantedly": "https://www.wantedly.com/id/Dai_h15",
     }
     let res=[];
     for(const key in Items){
