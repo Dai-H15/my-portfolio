@@ -6,8 +6,8 @@ const Title: {[key:string]: string} = {
 
 const Images: {[key:string]: [string,number,number]}  = {
     "001":["/my-portfolio/WiFi.png",367*0.5,215*0.5],
-    "002":["/my-portfolio/GPT.png",985*0.2,552*0.2],
-    "003":["/my-portfolio/ranking.png",1094*0.2,941*0.2]
+    "002":["./GPT.png",985*0.2,552*0.2],
+    "003":["ranking.png",1094*0.2,941*0.2]
 };
 
 const Desc: {[key:string]: string} = {
