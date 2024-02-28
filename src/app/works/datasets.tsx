@@ -3,7 +3,7 @@ const Title: {[key:string]: string} = {
     "002":"gpt_x-_deepl_Chatapp",
     "003":"ranking_app",
     "004":"【非公開】カスタムユーザー",
-    "005":"ux-js-animation",
+    "005":"js-animation",
 };
 
 const Images: {[key:string]: [string,number,number]}  = {
