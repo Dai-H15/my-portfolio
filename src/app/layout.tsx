@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import MenuBar from "@/app/ui/menubar";
 import Header from "@/app/ui/header";
 import Footer from "./ui/footer";
-
+import Script from 'next/script'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
+      <Script src="/my-portfolio/gtag.js"/>
       <body className={inter.className}>
         <div className="container-fluid">
           <div className="row border"><Header/></div>
