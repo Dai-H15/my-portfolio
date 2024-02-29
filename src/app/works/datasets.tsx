@@ -8,9 +8,9 @@ const Title: {[key:string]: string} = {
 
 const Images: {[key:string]: [string,number,number]}  = {
     "001":["/my-portfolio/WiFi.png",367*0.5,215*0.5],
-    "002":["/my-portfolio/GPT-X.gif",989*0.3,590*0.3],
+    "002":["/my-portfolio/GPT-X.gif",989*0.2,590*0.2],
     "003":["/my-portfolio/ranking.png",1094*0.2,941*0.2],
-    "004":["/my-portfolio/C_user.png",1255*.2,748*.2],
+    "004":["/my-portfolio/C_user.png",1255*.15,748*.15],
     "005":["/my-portfolio/ux-js-anime.gif",940*.2,771*.2]
 };
 

@@ -5,6 +5,7 @@ import MenuBar from "@/app/ui/menubar";
 import Header from "@/app/ui/header";
 import Footer from "./ui/footer";
 
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -21,13 +22,16 @@ export default function RootLayout({
     <html lang="ja">
       <body className={inter.className}>
         <div className="container-fluid p-0">
-          <div className="row"><Header/></div><MenuBar/>
-          <div className = "container p-3">
-            <div className="row">
-            {children}
-            <div className="row"><Footer/></div>
+          <div className="row"><Header/></div>
+          <div className="row d-block">
+            <MenuBar/>
+          </div>
+          <div className = "container">
+            <div className="row ">
+            <div className="p-3">{children}</div>
           </div>
           </div>
+          <div className="row"><Footer/></div>
         </div>
         </body>
     </html>

@@ -23,7 +23,7 @@ function Show({ params }: { params: { id: string } }) {
         <h3>{Title[id]}</h3>
         <div className="d-flex justify-content-center align-items-center">
             <div className="">
-                <Image src={Images[id][0]} alt={Images[id][0]} width={Images[id][1]*2} height={Images[id][2]*2}/>
+                <Image src={Images[id][0]} alt={Images[id][0]} width={Images[id][1]*3} height={Images[id][2]*3}/>
             </div>
         </div>
         <div className="row">
