@@ -50,7 +50,7 @@ function Like(){
 
 export default function Profile() {
     return(
-        <div className="container-fluid">
+        <div className="container">
             <div className="row">
                 <div className="prof-img col col-md-5"><Image className=" rounded" src = "/my-portfolio/prof_img.jpg" width={200} height={200} alt="プロフィール画像"/></div>
                 <div className="col col-md-5 m-2">

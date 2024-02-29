@@ -18,8 +18,6 @@ function Works(){
     return(
         <div className="container-fluid">
             <div className="row">{works}</div>
-            
-            
         </div>
     )
 }

@@ -22,10 +22,25 @@ function MenuBar(){
     }
     let res: JSX.Element[] =[];
     for(const key in Items){
-        res.push(<li key = {Items[key]}><Link className='link-underline link-underline-opacity-0' href = {URLs[key]}>{Items[key]}</Link></li>)}
-    
+        res.push(<li className="nav-item" key = {Items[key]}><Link className='nav-link' href = {URLs[key]}>{Items[key]}</Link></li>)}
+
     return(
-        <ul className='list-unstyled p-3' >{res}</ul>
+        <div>
+        <nav className="navbar navbar-expand-md bg-body-tertiary">
+  <div className="container-fluid">
+    <Link className="navbar-brand" href="/">MyPortfolio</Link>
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
+    </button>
+    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+        {res}
+      </ul>
+    </div>
+  </div>
+</nav>
+        </div>
+
     )
 }
 export default MenuBar;

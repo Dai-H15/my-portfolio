@@ -20,12 +20,13 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body className={inter.className}>
-        <div className="container-fluid">
-          <div className="row border"><Header/></div>
-          <div className="row">
-            <div className="col-2 border-end d-none d-md-block" ><MenuBar/></div>
-            <div className="col-10 p-3">{children}</div>
+        <div className="container-fluid p-0">
+          <div className="row"><Header/></div><MenuBar/>
+          <div className = "container p-3">
+            <div className="row">
+            {children}
             <div className="row"><Footer/></div>
+          </div>
           </div>
         </div>
         </body>
