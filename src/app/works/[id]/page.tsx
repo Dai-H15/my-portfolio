@@ -29,7 +29,7 @@ function Show({ params }: { params: { id: string } }) {
         <div className="row">
 
             <div className=" text-center p-5 ">
-                <p>{Desc[id]}</p>
+                <div style={{ whiteSpace: 'pre-line' }}>{Desc[id]}</div>
                 <h3><Link href={URLs[id]}>GitHubはこちら</Link></h3>
                 </div>
         </div>
