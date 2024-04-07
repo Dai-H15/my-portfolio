@@ -22,13 +22,13 @@ export default function RootLayout({
     <html lang="ja">
       <body className={inter.className}>
         <div className="container-fluid p-0">
-          <div className="row"><Header/></div>
-          <div className="row d-block">
+          <div className="row "><Header/></div>
+          <div className="row d-block pb-4">
             <MenuBar/>
           </div>
           <div className = "container">
             <div className="row ">
-            <div className="p-3">{children}</div>
+            <div className="">{children}</div>
           </div>
           </div>
           <div className="row"><Footer/></div>

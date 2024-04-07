@@ -52,8 +52,8 @@ export default function Profile() {
     return(
         <div className="container">
             <div className="row">
-                <div className="prof-img col col-md-5"><Image className=" rounded" src = "/my-portfolio/prof_img.jpg" width={200} height={200} alt="プロフィール画像"/></div>
-                <div className="col col-md-5 m-2">
+                <div className="prof-img col-md-10 col-lg-2"><Image className="img-fluid rounded" src = "/my-portfolio/prof_img.jpg" width={200} height={200} alt="プロフィール画像"/></div>
+                <div className="col-md col-lg-5 m-3">
                     <ul className="list-unstyled p-3 border rounded-3">
                         <Base/>
                     </ul>
