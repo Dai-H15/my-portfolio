@@ -7,6 +7,7 @@ const Skils: { [key: string]: {period:string, level: number} } = {
     "HTML/CSS": {period: "~3年", level: 4},
     "SQL": {period: "~2年", level: 2},
     "C言語": {period: "~2年", level:2},
+    "Java": {period: "~1年", level:1},
 };
 const levels: { [key: number]: string } = {
     1: "授業内で取り扱いあり",
