@@ -29,7 +29,12 @@ function Show({ params }: { params: { id: string } }) {
         <div className="row">
 
             <div className=" text-center p-5 ">
-                <div style={{ whiteSpace: 'pre-line' }}>{Desc[id]}</div>
+                <div style={{ whiteSpace: 'pre-line' }}>
+                    {Desc[id].map((desc, index) => 
+                         <p key={index}>{desc}</p>
+                    )
+                    }
+                    </div>
                 <h3><Link href={URLs[id]}>GitHubはこちら</Link></h3>
                 </div>
         </div>
