@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import MenuBar from "@/app/ui/menubar";
 import Header from "@/app/ui/header";
 import Footer from "./ui/footer";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -20,6 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
+<GoogleAnalytics gaId="G-ECZZMKGZ00"/>
       <body className={inter.className}>
         <div className="container-fluid p-0">
           <div className="row "><Header/></div>
