@@ -1,3 +1,7 @@
 export default function Loading() {
-    return(<h3>Loading.....</h3>)
-  }
+  return (
+      <output className="spinner-border text-primary">
+          <span className="visually-hidden">Loading...</span>
+      </output>
+  );
+}
