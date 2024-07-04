@@ -1,3 +1,5 @@
+import { List } from "postcss/lib/list";
+
 const Title: {[key:string]: string} = {
     "001":"Wi-Fi_Switcher",
     "002":"gpt_x-_deepl_Chatapp",
@@ -34,7 +36,40 @@ const URLs: {[key:string]: string}= {
     "006": "https://github.com/Dai-H15/CRAIMAS",
 }
 
+const Stacks: {[key: string]: { front: string[], back: string[], other: string[] }} = {
+    "001":{
+        "front":["tkinter"],
+        "back":["python"],
+        "other":["pyinstaller"]
+    },
+    "002":{
+        "front":["(CLIのため特に無し)"],
+        "back":["Python"],
+        "other":["DeepLAPI", "OpenAI API"]
+    },
+    "003":{
+        "front":["HTML"],
+        "back":["Django", "Python"],
+        "other":["(デプロイなし)"]
+    },
+    "004":{
+        "front":["HTML", "Bootstrap", "CSS", "JS"],
+        "back":["Django", "Python"],
+        "other":["(デプロイなし)"]
+    },
+    "005":{
+        "front":["HTML", "JS", "JQuery", "CSS"],
+        "back":["無し"],
+        "other":["無し"]
+    },
+    "006":
+    {
+        "front": ["Bootstrap", "HTML", "JS", "Webpack", "CSS"],
+        "back": ["Django", "nginx",  "Docker"],
+        "other": ["LetsEncript", "さくらのクラウド", "gBizINFO"]
+    }
+}
 
-const defaultExport = {Title,Images,Desc,URLs};
+const defaultExport = {Title,Images,Desc,URLs, Stacks};
 
 export default defaultExport;
