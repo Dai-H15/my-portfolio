@@ -7,6 +7,7 @@ const Title: {[key:string]: string} = {
     "004":"【チーム演習】ポータルサイト",
     "005":"【非公開】js-animation",
     "006":" CRAIMAS  [旧 Biz Intelli Scan]",
+    "007": "instanceSlackBot"
 };
 
 const Images: {[key:string]: [string,number,number]}  = {
@@ -16,6 +17,7 @@ const Images: {[key:string]: [string,number,number]}  = {
     "004":["/my-portfolio/C_user.png",1255*.15,748*.15],
     "005":["/my-portfolio/ux-js-anime.gif",940*.2,771*.2],
     "006":["/my-portfolio/BizIntelliScan.gif",1913*.17,940*.17],
+    "007":["/my-portfolio/instanceSlackBot.gif",1912*.2,1026*.2]
 };
 
 const Desc: {[key:string]: string[]} = {
@@ -25,6 +27,7 @@ const Desc: {[key:string]: string[]} = {
     "004": ["授業内制作（チーム演習）における担当箇所の画像。1つのDjangoアカウントから複数プロファイルの使い分けを可能にし、", "グループ作成や個人同士でのチャットのやり取りなどを行う事ができるよう認証の基盤を設計・実装。", "加えて、同授業制作におけるチャットアプリにおいてグループチャットと個人チャットのルーム機能の構想・実装を担当。", "載せられないけれど、とてもとても頑張ったプロジェクトでした。", "追記(2024/05/07): チームと教授の許可が降りたので、公開できるようになりました"],
     "005": ["詳細は省きますが、半分遊んでます。", "追記: 最初はGitHubにて公開していましたが、一度授業課題として扱われたものなので非公開に変更します。", "使用例くらいは公開しても問題ないと思うのでそのままにしておきます"],
     "006": ["大学から頂いた 'PDFの企業研究シート' を用いる際に、管理での不便や情報の利活用が行いづらい点を解消したいと思い作ったアプリケーション", "APIからの情報の取得に加え、JSON形式での出力によるバックアップ、面談録の管理など、就活に関して網羅できるようにしたいと", "思って作成しました。今後も継続して開発し、もしかしたら学生向けに提供するかも...?と考えています。真心を込めて開発中です", "更新(2024/05/14): ChatGPTにつけてもらった名前から変更しました。", "最新バージョンでは変更済みですが、上の画像は Biz Intelli Scan となっています。", "現在、U22プロコンの応募に向けて開発環境をお借りし、無償で利用者を募っているところです", "https://craimas.com"],
+    "007": ["SlackBotの操作を統一して大学のチーム実習のメンバー全員が使いやすいように整えたライブラリ。", "学内でもっと使用していただくために、PyPlに登録して使用までも簡単にできるようにしました。", "ポイントは、Botの操作をインスタンスを通すことで、チャンネルがごっちゃにならないことなどはわかりやすいかもです"]
 };
 
 const URLs: {[key:string]: string}= {
@@ -34,6 +37,7 @@ const URLs: {[key:string]: string}= {
     "004":"https://github.com/Dai-H15/CS-ensyu-4-082",
     "005":"about:blank",
     "006": "https://github.com/Dai-H15/CRAIMAS",
+    "007": "https://github.com/Dai-H15/InstanceSlackBot"
 }
 
 const Stacks: {[key: string]: { front: string[], back: string[], other: string[] }} = {
@@ -67,6 +71,11 @@ const Stacks: {[key: string]: { front: string[], back: string[], other: string[]
         "front": ["Bootstrap", "HTML", "JS", "Webpack", "CSS"],
         "back": ["Django", "nginx",  "Docker"],
         "other": ["LetsEncript", "さくらのクラウド", "gBizINFO"]
+    },
+    "007":{
+        "front":["なし"],
+        "back":["Python"],
+        "other":["Slack_sdk", "datetime"]
     }
 }
 
