@@ -33,7 +33,7 @@ function Show({ params }: { params: { id: string } }) {
                 <h3 className="text-start border-bottom border-2">説明</h3>
                 <div style={{ whiteSpace: 'pre-line' }}>
                     {Desc[id].map((desc, index) => 
-                         <p key={index}>{desc}</p>
+                         <p key={index} dangerouslySetInnerHTML={{ __html: desc }}></p>
                     )
                     }
                     </div>
@@ -46,7 +46,7 @@ function Show({ params }: { params: { id: string } }) {
                             <thead>
                                 <tr>
                                     <th scope="col">フロントエンド</th>
-                                    <th scope="col">バックエンド</th>
+                                    <th scope="col">バックエンド・サーバーサイド</th>
                                     <th scope="col">その他</th>
                                 </tr>
                             </thead>
