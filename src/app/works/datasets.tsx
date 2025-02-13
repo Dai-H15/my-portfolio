@@ -7,7 +7,8 @@ const Title: {[key:string]: string} = {
     "004":"【チーム演習】ポータルサイト",
     "005":"【非公開】js-animation",
     "006":" CRAIMAS  [旧 Biz Intelli Scan]",
-    "007": "instanceSlackBot"
+    "007": "instanceSlackBot",
+    "008": "おまかせTodoリスト"
 };
 
 const Images: {[key:string]: [string,number,number]}  = {
@@ -17,7 +18,8 @@ const Images: {[key:string]: [string,number,number]}  = {
     "004":["/my-portfolio/C_user.png",1255*.15,748*.15],
     "005":["/my-portfolio/ux-js-anime.gif",940*.2,771*.2],
     "006":["/my-portfolio/craimas.png",1900*.2,1002*.2],
-    "007":["/my-portfolio/instanceSlackBot.gif",1912*.2,1026*.2]
+    "007":["/my-portfolio/instanceSlackBot.gif",1912*.2,1026*.2],
+    "008":["/my-portfolio/omakaseTodo.gif",1916*.2,938*.2]
 };
 
 const Desc: {[key:string]: string[]} = {
@@ -27,7 +29,8 @@ const Desc: {[key:string]: string[]} = {
     "004": ["授業内制作（チーム演習）における担当箇所の画像。1つのDjangoアカウントから複数プロファイルの使い分けを可能にし、", "グループ作成や個人同士でのチャットのやり取りなどを行う事ができるよう認証の基盤を設計・実装。", "加えて、同授業制作におけるチャットアプリにおいてグループチャットと個人チャットのルーム機能の構想・実装を担当。", "載せられないけれど、とてもとても頑張ったプロジェクトでした。", "追記(2024/05/07): チームと教授の許可が降りたので、公開できるようになりました"],
     "005": ["詳細は省きますが、半分遊んでます。", "追記: 最初はGitHubにて公開していましたが、一度授業課題として扱われたものなので非公開に変更します。", "使用例くらいは公開しても問題ないと思うのでそのままにしておきます"],
     "006": ["自分の中で最大の個人制作","大学から頂いた 'PDFの企業研究シート' を用いる際に、管理での不便や情報の利活用が行いづらい点を解消したいと思い作ったアプリケーション", "複数の<ムダ>を削り、<妥協>をすることないプロダクト制作","企業研究シートのデジタル化から、面談録、名刺情報の登録、企業ごとの比較機能などを盛り込み、現在もアップデート中",  "こちらのURLで公開中→ <a href ='https://craimas.com' target='_blank' rel='noopener noreferrer'> https://craimas.com</a>", "プロダクトのさらなる情報や背景はこちらから→  <a href ='https://protopedia.net/prototype/5388' target='_blank' rel='noopener noreferrer'>https://protopedia.net/prototype/5388</a>"],
-    "007": ["SlackBotの操作を統一して大学のチーム実習のメンバー全員が使いやすいように整えたライブラリ。", "学内でもっと使用していただくために、PyPlに登録して使用までも簡単にできるようにしました。", "ポイントは、Botの操作をインスタンスを通すことで、チャンネルがごっちゃにならないことなどはわかりやすいかもです"]
+    "007": ["SlackBotの操作を統一して大学のチーム実習のメンバー全員が使いやすいように整えたライブラリ。", "学内でもっと使用していただくために、PyPlに登録して使用までも簡単にできるようにしました。", "ポイントは、Botの操作をインスタンスを通すことで、チャンネルがごっちゃにならないことなどはわかりやすいかもです"],
+    "008": ["やりたいことは決まっているけど、できるようになるまでの道筋がわからない", "そんな悩みをAIが解決してくれるアプリ", "目標達成の道筋から、その具体的な内容まで情報提供し、サポートしてくれます", "次世代のTodoリストです"]
 };
 
 const URLs: {[key:string]: string}= {
@@ -37,7 +40,8 @@ const URLs: {[key:string]: string}= {
     "004":"https://github.com/Dai-H15/CS-ensyu-4-082",
     "005":"about:blank",
     "006": "https://github.com/Dai-H15/CRAIMAS",
-    "007": "https://github.com/Dai-H15/InstanceSlackBot"
+    "007": "https://github.com/Dai-H15/InstanceSlackBot",
+    "008": "https://github.com/Dai-H15/omakasetodo",
 }
 
 const Stacks: {[key: string]: { front: string[], back: string[], other: string[] }} = {
@@ -76,7 +80,12 @@ const Stacks: {[key: string]: { front: string[], back: string[], other: string[]
         "front":["なし"],
         "back":["Python"],
         "other":["Slack_sdk", "datetime"]
-    }
+    },
+    "008": {
+        "front": ["Bootstrap", "HTML", "JS"],
+        "back":  ["Python(Django)"],
+        "other": ["OpenAI API", "Google Custom Search"]
+    },
 }
 
 const defaultExport = {Title,Images,Desc,URLs, Stacks};
