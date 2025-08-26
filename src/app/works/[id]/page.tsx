@@ -1,9 +1,9 @@
-import Datasets from "../datasets";
+import works from "../datasets";
 import Image from "next/image";
 import Link from "next/link";
 
 export function generateStaticParams() {
-    const Titles = Datasets.Title;
+    const Titles = works.dataSet.getTitles();
     let ids :{ id: string }[]= []
     for(const key in Titles){
         ids.push({id: key})
@@ -13,18 +13,30 @@ export function generateStaticParams() {
 
 function Show({ params }: { params: { id: string } }) {
 
-    const Title = Datasets.Title;
-    const Images = Datasets.Images;
-    const Desc = Datasets.Desc;
-    const URLs = Datasets.URLs;
+    const Title = works.dataSet.getTitles();
+    const Images = works.dataSet.getImages();
+    const Desc = works.dataSet.getDescriptions();
+    const URLs = works.dataSet.getUrls();
     const id = params.id
-    const Stack = Datasets.Stacks;
+    const Stack = works.dataSet.getStacks();
     return (
     <div className="container-fluid">
         <h3>{Title[id]}</h3>
         <div className="d-flex justify-content-center align-items-center">
             <div className="">
-                <Image src={Images[id][0]} alt={Images[id][0]} width={Images[id][1]*2} height={Images[id][2]*2}/>
+                {Images[id].type === "video" ? (
+                    <video 
+                        src={Images[id].data[0]} 
+                        width={Images[id].data[1]*2} 
+                        height={Images[id].data[2]*2}
+                        controls
+                        autoPlay
+                        muted
+                        loop
+                    />
+                ) : (
+                    <Image src={Images[id].data[0]} alt={Images[id].data[0]} width={Images[id].data[1]*2} height={Images[id].data[2]*2}/>
+                )}
             </div>
         </div>
         <div className="row">
